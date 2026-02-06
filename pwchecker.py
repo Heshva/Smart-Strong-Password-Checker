@@ -21,7 +21,7 @@ password = st.text_input("Enter your password", type="password")
 if st.button("Check Password"):
 
     if name == "" or dob == "" or password == "":
-        st.error("Please fill all fields")
+        st.error("Please fill all details")
     else:
         year = dob[:4]
         score = 0
@@ -72,3 +72,4 @@ if st.button("Check Password"):
         if reasons:
             for r in reasons:
                 st.write("- ", r)
+
